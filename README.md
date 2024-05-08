@@ -5,7 +5,7 @@
 ### **Installation**
 
 ```sh
-   npm install react-zoom-img
+   npm install react-img-zoomer
 ```
 
 ### Simple Example
@@ -19,7 +19,7 @@ This will include default properties of the Component and renders.
 ### Usage
 
 ```jsx
-import Zoom from "react-zoom-img";
+import Zoom from "react-img-zoomer";
 import Image from "./assets/imgs/image.png";
 
 function Example() {
