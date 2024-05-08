@@ -1,8 +1,23 @@
 {
   "name": "react-zoom-img",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.1",
+  "description": "A react image component which zoom the image in the viewport of the website.",
+  "main": "dist/cjs/Zoom.js",
+  "module": "dist/vite/Zoom.js",
+  "files": [
+    "dist"
+  ],
   "type": "module",
+  "author": "Cesar Zambrano",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cesarzambranod/react-zoom-img.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cesarzambranod/react-zoom-img.git/issues"
+  },
+  "homepage": "https://github.com/cesarzambranod/react-zoom-img#readme",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && npm run postbuild",
@@ -27,5 +42,17 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
-  }
+  },
+  "keywords": [
+    "react image",
+    "image zoom",
+    "zoom",
+    "image",
+    "reactjs",
+    "react",
+    "reactjs image",
+    "reactjs image zoom",
+    "hover image",
+    "react image library"
+  ]
 }
