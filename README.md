@@ -1,30 +1,62 @@
-# React + TypeScript + Vite
+# React Zoom Img
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
 
-Currently, two official plugins are available:
+### **Installation**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```sh
+   npm install react-zoom-img
+```
 
-## Expanding the ESLint configuration
+### Simple Example
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```tsx
+<Zoom imgsrc={Image} />
+```
 
-- Configure the top-level `parserOptions` property like this:
+This will include default properties of the Component and renders.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
+### Usage
+
+```jsx
+import Zoom from "react-zoom-img";
+import Image from "./assets/imgs/image.png";
+
+function Example() {
+  return (
+    <Zoom
+      width={150} // width in percent default is 100%
+      height={500} // height of the box
+      maxwidth={500} // width of the box
+      repeat="repeat" // default is no-repeat
+      position="center" // cover
+      imagesrc={Image} // Image component | URL
+      size={200} // it is in percent
+      bgsize="cover" // background-size
+      cursor="zoom-in" // pointer
+      borderpixel={2} // size of border
+      bordercolor="red" // color of border
+      style={{ margin: "20px" }} // add custom style
+      className="img-box" // classname for box
+      color="red" // color when image not loaded
+    />
+  );
 }
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Default values
+
+| key         | Value       | Guide / What they does      |
+| ----------- | ----------- | --------------------------- |
+| imgsrc      | default url | source of Image             |
+| height      | 400         | height 400px                |
+| width       | 100         | width 100%                  |
+| maxwidth    | 400         | Width of container          |
+| repeat      | no-repeat   | css bg-repeat property      |
+| position    | center      | css position property       |
+| bgsize      | cover       | css bg property             |
+| size        | 100         | How zoomed image should be? |
+| cursor      | zoom-in     | css cursor property         |
+| borderpixel | 1           | border width                |
+| color       | #8f8f8f     | Color of container          |
+| bordercolor | #ddd        | Color of border             |
