@@ -1,5 +1,5 @@
 {
-  "name": "react-zoom-img",
+  "name": "react-zoomable-image",
   "version": "1.0.1",
   "description": "A react image component which zoom the image in the viewport of the website.",
   "main": "dist/cjs/Zoom.js",
