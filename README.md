@@ -1,6 +1,7 @@
 # React Zoom Img
 
-## Getting Started
+## Overview
+React component for desktop browsers for image zoom on mouse hover.
 
 ### **Installation**
 
