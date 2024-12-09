@@ -1,6 +1,6 @@
 {
   "name": "react-img-zoomer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A react image component which zoom the image in the viewport of the website.",
   "main": "dist/cjs/Zoom.js",
   "module": "dist/vite/Zoom.js",
